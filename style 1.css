@@ -1,0 +1,257 @@
+/* @import url('https //fonts.googleapis.com/css2 family=poppins &display=swap') */
+/* global for all */
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.header-content a{
+    text-decoration: none;
+    background: blue;
+    border-radius:30px;
+    color: whitesmoke;
+    padding:1px 10px;
+    
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(fort\ 45.jpg);
+    
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+.header-content{
+    margin: 150px;
+    color: whitesmoke;
+    text-align: center;
+    
+
+}
+.header-content h2{
+    font-size: 4vmin;
+}
+.line{
+    width: 100px;
+    height: 5px;
+    margin: 10px  auto;
+    background-color: darksalmon;
+    border-radius: 6px;
+}
+/* to eliminate x-direction gap */
+body,html{
+    overflow-x: hidden;
+}
+
+   
+/* temples event */
+section{
+    width: 80%;
+    margin: 80px 10px;
+    
+}
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: aqua;
+    
+    
+}
+.img1{
+    width: 600px;
+}
+.row{
+    display: flex;
+    
+    
+    align-items: center;
+    
+    
+}
+h3{
+    margin:20px auto ;
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 3vmin;
+}
+p{
+    font-weight: bolder;
+    padding: 0px 40px;
+}
+.ctn{
+    align-items: center;
+}
+.row.col img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+    margin-right: 30px;
+    width: 100%;
+}
+.ctn{
+    text-decoration: none;
+    background-color: greenyellow;
+    border-radius: 30px;
+    margin: 10px 10px;
+    padding: 1px 8px;
+    
+}
+/* explorewater falls */
+.explore{
+     width: 100%;
+     
+    height: 100vh;
+
+    background-image: url('waterkurnool.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.exp{
+    width: 50%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.exp.line{
+    margin-bottom:50px ;
+}
+.exp h1{
+    font-size: 7vmin;
+    
+    font-style: italic;
+}
+.exp p{
+    color: rgb(183, 89, 89);
+}
+/* explore places and foodies */
+
+    
+
+.tours.row.col{
+    width: 50%;
+} 
+.tours.imgage-gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+.imgage-gallery img{
+    width: 300px;
+    margin: 10px;
+    border-radius: 25px;
+    
+}
+.tours a{
+    text-decoration: none;
+    background-color: gray;
+    border-radius:30px ;
+    margin-left: 70px;
+    color: whitesmoke;
+    padding: 0px 8px;
+}
+.tours p{
+    color: rgb(222, 185, 185);
+}
+/* footer */
+.footer{
+    width: 100%;
+   min-height: 100px;
+    padding: 20px 80px;
+    margin:0;
+    background:#484872;
+    text-align: center;
+}
+.footer p{
+    color: blanchedalmond;
+    margin:20px  auto;
+    padding: 20px auto;
+    
+}
+.footer a{
+    color:whitesmoke;
+    margin: 4px 10px;
+}
+
+
+@media only screen and (max-width: 850px){
+    .navabar{
+        padding: 0;
+    
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    } 
+    /* margin top====-900 for the disappear the menu */
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: blueviolet;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+        
+    } 
+    .mobile-menu{
+        margin: 0px;
+    } 
+    .nav-links li{
+        margin: 30px auto;
+    }
+/* events temples */
+    .rows{
+        flex-direction: column;
+    }
+    .row.col{
+        margin: 20px auto;
+    }
+    .col img{
+        max-width: 90%;
+    }
+    /* explore  water*/
+    .exp{
+        width: 100%;
+    }
+    .tours.col{
+        width: 100%;
+    }
+    .imgage-gallery{
+        justify-content: center;
+        align-items: center;
+    }
+    .tours a{
+        margin: 75px 10px;
+        padding: 1px 9px;
+    }
+    .footer{
+        padding:10px ;
+    }
+
+    
+}
+/* ANIMATIONS */
+img{
+    transition: transform.3s ease;
+}
+img:hover{
+    transform: scale(1.1);
+}
+.ctn:hover{
+    background-color: whitesmoke;
+    color: #fc036b;
+    box-shadow: 2px 2px 5px rgb(63, 10, 10);
+}
+
